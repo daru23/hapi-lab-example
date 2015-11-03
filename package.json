@@ -28,6 +28,7 @@
     "good": "^6.4.0",
     "good-console": "^5.1.0",
     "good-file": "^5.1.0",
+    "good-http": "^5.1.0",
     "hapi": "^11.0.4"
   },
   "devDependencies": {
