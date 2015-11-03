@@ -1,0 +1,36 @@
+{
+  "name": "hapi-lab-example",
+  "version": "1.0.0",
+  "description": "lab module test for hapi projects examples",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daru23/hapi-lab-example.git"
+  },
+  "keywords": [
+    "lab",
+    "hapi",
+    "tests",
+    "test",
+    "http",
+    "server"
+  ],
+  "author": "Daniela Ruiz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/daru23/hapi-lab-example/issues"
+  },
+  "homepage": "https://github.com/daru23/hapi-lab-example#readme",
+  "dependencies": {
+    "good": "^6.4.0",
+    "good-console": "^5.1.0",
+    "good-file": "^5.1.0",
+    "hapi": "^11.0.4"
+  },
+  "devDependencies": {
+    "lab": "^7.1.0"
+  }
+}
