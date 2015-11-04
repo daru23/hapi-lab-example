@@ -1,10 +1,9 @@
-
 var Hapi = require('hapi'),
     Good = require('good'),
     config = require("./config.json");
 
-
 var server = new Hapi.Server();
+
 server.connection({
     host: config.server.host,
     port: config.server.port
@@ -36,17 +35,8 @@ var options = {
         events: { log: '*', response: '*' }
     }, {
         reporter: require('good-file'),
-        events: { ops: '*' },
-        config: './test/fixtures/awesome_log'
-    }, {
-        reporter: 'good-http',
-        events: { error: '*' },
-        config: {
-            endpoint: 'http://prod.logs:3000',
-            wreck: {
-                headers: { 'x-api-key' : 12345 }
-            }
-        }
+        events: { request: '*', response : '*' },
+        config: './logs/http/http_log'
     }]
 };
 
